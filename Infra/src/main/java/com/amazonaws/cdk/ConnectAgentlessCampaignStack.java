@@ -95,7 +95,7 @@ public class ConnectAgentlessCampaignStack extends Stack {
         CfnPhoneNumber cfnPhoneNumber = CfnPhoneNumber.Builder.create(this, "connect-example-phone-number")
                 .countryCode("AU")
                 .targetArn(amazonConnect.getAttrArn())
-                .type("TOLL_FREE")
+                .type("DID")
                 .build();
 
 
